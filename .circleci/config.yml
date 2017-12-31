@@ -26,7 +26,7 @@ jobs:
       - run: go test -v ./...
   
   deployment:
-  staging:
-    branch: master
-    heroku:
-      appname: settlers-io
+    staging:
+      branch: master
+      heroku:
+        appname: settlers-io
