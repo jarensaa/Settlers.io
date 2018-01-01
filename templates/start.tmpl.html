@@ -1,0 +1,50 @@
+<html>
+{{template "header.tmpl.html"}}
+
+<body>
+    <main>
+        <section class="fdb-block fdb-viewport small-footer-align" style="background-image: url(static/img/bg_3.svg)">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5 text-left">
+                        <div class="fdb-box">
+                            <div class="row">
+                                <div class="col">
+                                    <h2>Enter options</h2>
+                                    <h4>The game board will be generated based on the selected values.</h4>
+                                </div>
+                            </div>
+                            <div class="form">
+                                <div class="row">
+                                    <div class="col mt-4">
+                                        <h3>Game mode:</h3>
+                                        {{template "start.accordion.tmpl.html"}}
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col">
+                                        {{template "start.players.tmpl.html"}}
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col">
+                                        <h3>Place players?</h3>
+                                        {{template "start.placeplayer.tmpl.html"}}
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col">
+                                        <a class="btn btn-orange" type="button">Generate</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    {{template "footer.tmpl.html"}} {{template "script.tmpl.html"}}
+</body>
+
+</html>

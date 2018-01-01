@@ -1,5 +1,5 @@
-@import './variables';
-@import './mixins';
+@import "./variables";
+@import "./mixins";
 
 .btn {
   padding: $btn-padding;
@@ -39,6 +39,40 @@
     }
   }
 
+  &.btn-purple {
+    color: $btn-purple-text-color;
+    background-color: $btn-purple-bg-color;
+    border-color: $btn-purple-bg-color;
+
+    &.btn-empty {
+      background-color: transparent;
+      color: $btn-purple-bg-color;
+    }
+
+    &:hover {
+      color: $btn-purple-hover-text-color;
+      background-color: $btn-purple-hover-bg-color;
+      border-color: $btn-purple-hover-bg-color;
+    }
+  }
+
+  &.btn-orange {
+    color: $btn-orange-text-color;
+    background-color: $btn-orange-bg-color;
+    border-color: $btn-orange-bg-color;
+
+    &.btn-empty {
+      background-color: transparent;
+      color: $btn-orange-bg-color;
+    }
+
+    &:hover {
+      color: $btn-orange-hover-text-color;
+      background-color: $btn-orange-hover-bg-color;
+      border-color: $btn-orange-hover-bg-color;
+    }
+  }
+
   &.btn-white {
     color: $btn-white-text-color;
     background-color: $btn-white-bg-color;
@@ -63,5 +97,31 @@
   &.btn-round {
     @include border-radius(20px);
     min-width: 150px;
+  }
+}
+
+.btn-toolbar {
+  .btn {
+    background-color: $btn-orange-bg-color;
+    border-color: $btn-orange-bg-color;
+    padding: 4px 12px;
+
+    &.active {
+      background-color: gray !important;
+      border-color: gray;
+    }
+  }
+}
+
+#placeplayer {
+  .btn {
+    padding: 3px 10px;
+    background-color: $btn-orange-bg-color;
+    border-color: $btn-orange-bg-color;
+
+    &.active {
+      background-color: gray !important;
+      border-color: gray;
+    }
   }
 }

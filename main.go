@@ -6,7 +6,6 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
-	_ "github.com/heroku/x/hmetrics/onload"
 )
 
 func main() {
@@ -23,6 +22,10 @@ func main() {
 
 	router.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.tmpl.html", nil)
+	})
+
+	router.GET("/start", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "start.tmpl.html", nil)
 	})
 
 	router.Run(":" + port)

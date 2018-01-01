@@ -1,7 +1,8 @@
 // Colors.
 $primary-color: #528bff;
-$white: #FFFFFF;
+$white: #ffffff;
 $black: #000000;
+$blue: #000000;
 $font-color: #444444;
 
 // Sizes.
@@ -11,23 +12,35 @@ $heading-margin: 0.7em;
 
 // Block
 $block-padding: 100px;
+$small-footer-padding: 15px;
+$small-footer-height: 50px;
 
 // Buttons.
-$btn-padding: 9px 26px;
+$btn-padding: 8px 24px;
 $btn-bg-color: $primary-color;
-$btn-text-color: #FFF;
-$btn-hover-text-color: #FFF;
+$btn-text-color: #fff;
+$btn-hover-text-color: #fff;
 $btn-hover-bg-color: darken($btn-bg-color, 10%);
 
 $btn-white-bg-color: $white;
 $btn-white-text-color: $black;
 $btn-white-hover-text-color: $btn-white-text-color;
-$btn-white-hover-bg-color: #DEDEDE;
+$btn-white-hover-bg-color: #dedede;
 
 $btn-black-bg-color: $black;
 $btn-black-text-color: $white;
-$btn-black-hover-text-color: #FFF;
+$btn-black-hover-text-color: #fff;
 $btn-black-hover-bg-color: lighten($btn-black-bg-color, 5%);
+
+$btn-purple-bg-color: #9575cd;
+$btn-purple-text-color: $white;
+$btn-purple-hover-text-color: #fff;
+$btn-purple-hover-bg-color: lighten($btn-purple-bg-color, 5%);
+
+$btn-orange-bg-color: #ffcc80;
+$btn-orange-text-color: $white;
+$btn-orange-hover-text-color: #fff;
+$btn-orange-hover-bg-color: lighten($btn-orange-bg-color, 5%);
 
 $btn-border-radius: 10px;
 
@@ -49,4 +62,4 @@ $headings-margin-bottom: (
   h4: 10px,
   h5: 10px,
   h6: 10px
-)
+);
