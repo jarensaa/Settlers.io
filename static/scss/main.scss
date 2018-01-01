@@ -1,39 +1,25 @@
-.jumbotron {
-    background: #532F8C;
-    color: white;
-    padding-bottom: 80px;
-
-    .btn-primary {
-      background: #845ac7;
-      border-color: #845ac7; 
-    }
-
-    .btn-primary:hover {
-        background: #7646c1; 
-    }
-
-    p {
-      color: #d9ccee;
-      max-width: 75%;
-      margin: 1em auto 2em; 
-    }
-
-    .lang-logo {
-      display: block;
-      background: #B01302;
-      border-radius: 50%;
-      overflow: hidden;
-      width: 100px;
-      height: 100px;
-      margin: auto;
-      border: 2px solid white; 
-    }
-
-    .lang-logo img {
-      max-width: 100%; 
-    }
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-.navbar + .jumbotron {
-    margin-top: -20px; 
+main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    background-color: #212121;
+    
+    .content {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 10px;
+        color: #f5f5f5;
+        text-align: center;
+
+        .link {
+            color: #f5f5f5
+        }
+    }
+    
 }
